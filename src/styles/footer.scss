@@ -1,0 +1,40 @@
+@import "colors";
+footer{
+    background-color: $first;
+    height:180px;
+    width: 100%;
+    color: $dark;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        >h1{
+            text-transform: uppercase;
+            color: $third;
+            font: 700 2rem $text1;
+        }
+        >p{
+            font: 500 1.2rem $text1;
+        }
+        >h5{
+            margin: 1rem 0;
+            text-align: center;
+            font: 300 2rem $text1;
+        }
+        >div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                color: $dark;
+                font: 900 1rem $text1;
+                &:hover{
+                    color: $third;
+                }
+            }
+        }
+    }
+}
